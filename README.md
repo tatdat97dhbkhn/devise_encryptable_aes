@@ -55,3 +55,9 @@ Compare password
 ```ruby
 ::Devise::Encryptable::Encryptors::Aes256.compare(encrypted_password, password, Devise.pepper)
 ```
+
+Decrypt password
+
+```ruby
+::Devise::Encryptable::Encryptors::Aes256.decrypt(encrypted_password, Devise.pepper)
+```
