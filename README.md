@@ -14,7 +14,7 @@ Add the following line to your Gemfile:
 
 ```ruby
 gem 'devise', '~> 4.9'
-gem 'devise_encryptable_aes', '~> 0.2.0'
+gem 'devise_encryptable_aes', '~> 0.0.6'
 ```
 
 Then run `bundle install`
