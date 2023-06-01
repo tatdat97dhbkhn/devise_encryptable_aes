@@ -14,6 +14,7 @@ Add the following line to your Gemfile:
 
 ```ruby
 gem 'devise', '~> 4.9'
+gem 'devise-encryptable', '~> 0.2.0'
 gem 'devise_encryptable_aes', '~> 0.0.6'
 ```
 
