@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-require 'devise/encryptable/encryptors/aes256'
+require 'devise_encryptable_aes/aes256'

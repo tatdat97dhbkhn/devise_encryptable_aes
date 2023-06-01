@@ -6,6 +6,7 @@ require 'devise/encryptable/encryptors/base'
 module Devise
   module Encryptable
     module Encryptors
+      # Add AES encryption support for Devise
       class Aes256 < Base
         class << self
           def digest(password, _stretches, salt, pepper)

@@ -14,7 +14,7 @@ Add the following line to your Gemfile:
 
 ```ruby
 gem 'devise', '~> 4.9'
-gem 'devise_encryptable_aes'
+gem 'devise_encryptable_aes', '~> 0.2.0'
 ```
 
 Then run `bundle install`
@@ -60,4 +60,12 @@ Decrypt password
 
 ```ruby
 ::Devise::Encryptable::Encryptors::Aes256.decrypt(encrypted_password, Devise.pepper)
+```
+
+If you get an error when using <tt>valid_password?</tt>, you can customize the <tt>valid_password?</tt> function to
+
+```ruby
+  def valid_password?(password)
+    ::Devise::Encryptable::Encryptors::Aes256.compare(encrypted_password, password, Devise.pepper)
+  end
 ```
